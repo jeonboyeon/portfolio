@@ -9,7 +9,6 @@ export default class Camera {
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
-        // console.log(this.camera, this.camera.perspectiveCamera);
 
         this.setRenderer();
     }
@@ -18,10 +17,11 @@ export default class Camera {
         this.renderer = new THREE.WebGLRenderer({
             canvas: this.canvas,
             antialias: true,
+            alpha: true,
         });
 
         this.renderer.physicallyCorrectLights = true;
-        this.renderer.outputEncoding = THREE.sRGBEncoding;
+        // this.renderer.outputEncoding = THREE.sRGBEncoding;
         this.renderer.toneMapping = THREE.CineonToneMapping;
         this.renderer.toneMappingExposure = 1.5;
         this.renderer.shadowMap.enabled = true;

@@ -15,7 +15,6 @@ export default class Camera {
         this.createOrthographicCamera();
         // 마우스 컨트롤
         this.setOrbitControls();
-        // console.log(this.sizes, this.scene, this.canvas);
     }
 
     // 펄스펙티브 카메라 설정
@@ -27,12 +26,9 @@ export default class Camera {
         this.perspectiveCamera.position.z = -60;
         this.perspectiveCamera.position.y = 10;
         this.perspectiveCamera.position.x = -50;
-
-        this.cameraZoom = new THREE.Vector3(1, 1, 1);
         this.perspectiveCamera.zoom = 2.2;
         this.perspectiveCamera.updateProjectionMatrix();
 
-        this.scene.add(this.cameraZoom);
     }
     // 오쏘그래픽 카메라 설정
     createOrthographicCamera() {
@@ -45,18 +41,7 @@ export default class Camera {
             100
         );
 
-        // const size = 50;
-        // const divisions = 50;
-
-        //  그리드 헬퍼
-        // const gridHelper = new THREE.GridHelper(size, divisions);
-        // this.scene.add(gridHelper);
-
         this.scene.add(this.orthographicCamera);
-
-        // x,y,z 축 헬퍼
-        // const axesHelper = new THREE.AxesHelper(10);
-        // this.scene.add(axesHelper);
     }
 
     // 마우스 컨트롤
@@ -64,6 +49,7 @@ export default class Camera {
         this.controls = new OrbitControls(this.perspectiveCamera, this.canvas);
         this.controls.enableDamping = false;
         this.controls.enableZoom = false;
+          this.controls.enableRotate = false;
     }
 
     resize() {
@@ -79,6 +65,6 @@ export default class Camera {
     }
 
     update() {
-        // this.controls.update();
+        this.controls.update();
     }
 }

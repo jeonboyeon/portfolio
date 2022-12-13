@@ -20,8 +20,6 @@ export default class Resources extends EventEmitter {
 
         this.setLoaders();
         this.startLoading();
-
-        // console.log(assets);
     }
 
     setLoaders() {
@@ -63,10 +61,7 @@ export default class Resources extends EventEmitter {
     singleAssetLoaded(asset, file) {
         this.items[asset.name] = file;
         this.loaded++;
-
-        console.log("asset is loading");
         if (this.loaded === this.queue) {
-            console.log("all a loading");
             this.emit("ready");
         }
     }

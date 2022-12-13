@@ -18,6 +18,7 @@ export default class Experience {
 
         Experience.instance = this;
         this.canvas = canvas; // 캔버스
+
         this.scene = new THREE.Scene(); // 씬
         this.time = new Time(); // 시간
         this.sizes = new Sizes(); // 사이즈

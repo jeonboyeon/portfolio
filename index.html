@@ -6,17 +6,751 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vite App</title>
     </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
     <body>
-        <div class="experience">
-            <h1 class="section01_title">HELLO!</h1>
-            <p class="section01_subTitle">My name is Jeon Boyeon</p>
-            <p class="section01_desc">this is my portfolio :)</p>
+        <header id="header">
+            <div class="header__inner">
+                <h1 class="logo"><a>PORTFOLIO</a> <em>2022. jeonboyeon</em></h1>
+                <!-- 헤더 로고 -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#section01">Main</a></li>
+                        <li><a href="#section02">About Me</a></li>
+                        <li><a href="#c">Work</a></li>
+                        <li><a href="#c">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <!-- 헤더 네비게이션 -->
+            </div>
+            <!-- header__inner -->
+        </header>
+        <!-- header -->
+
+        <div id="section01" class="experience">
+            <div class="section01_main">
+                <h2 class="section01_title">HELLO!</h2>
+                <p class="section01_subTitle">My name is <em>Jeon Boyeon</em></p>
+                <p class="section01_desc">저의 포트폴리오에 오신 것을 환영합니다 :)</p>
+            </div>
+            <!-- 섹션 01 타이틀과 나머지 요소 -->
+
+            <div class="section01_codeBg01"></div>
+            <div class="section01_codeBg02"></div>
+            <div class="section01_codeBg03"></div>
+            <div class="section01_codeBg04"></div>
+            <!-- 섹션 01 꾸미기 요소 -->
+
             <canvas class="experience-canvas"></canvas>
         </div>
+        <!-- section 01 끝 -->
 
-        <div class="experience2">
+        <div class="section01_bg01"></div>
+        <div class="section01_bg02"></div>
+
+        <div id="section02" class="experience2">
+            <section class="section02 section02__wrap">
+                <div class="section02__inner">
+                    <h2 class="section02__title01">About Me</h2>
+                    <div class="section02_myImg"></div>
+                    <div class="section02_myImg02"></div>
+                    <div class="section02__info">
+                        <p class="name">이름 : 전보연</p>
+                        <p class="age">생년월일 : 1997년 10월 7일 (2022 기준 만 25살)</p>
+                        <p class="hobby">취미 : 노래 듣기, 흥미로운 건 모든지 다 해보기, 그림그리기</p>
+                        <p class="advantage">장점 : 솔직함, 성실함, 눈치 빠름, 단기 집중력이 대단함</p>
+                        <p class="advantage">
+                            직무 역량 : HTML, CSS, JS, Photohop, Illustlation, <br />
+                            Figma, Blender
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="heart section01__bg02"></div>
+            <span class="heart section01__heart01"></span>
+            <span class="heart section01__heart02"></span>
+            <span class="heart section01__heart03"></span>
+            <span class="heart section01__heart04"></span>
+            <span class="heart section01__heart05"></span>
             <canvas class="experience-canvas2"></canvas>
         </div>
+
+        <div id="section03" class="experience3">
+            <section class="section03 section03__wrap">
+                <div class="section03__inner">
+                    <h2 class="section03__title">My work</h2>
+                    <div class="section03__work">
+                        <h3 class="section03__workTitle">JAVASCRIPT</h3>
+                        <ul class="work work__javascript">
+                            <li class="list"><a href="#">Search Effect</a></li>
+                            <li class="list"><a href="#">Quiz Effect</a></li>
+                            <li class="list"><a href="http://jeonboyeon.dothome.co.kr/javascript/effect/sliderEffect01.html">Slider Effect</a></li>
+                            <li class="list"><a href="http://jeonboyeon.dothome.co.kr/javascript/effect/gameEffect01.html">Game Effect</a></li>
+                        </ul>
+                        <h3 class="section03__workTitle">SITE</h3>
+                        <ul class="work work__site">
+                            <li class="list"><a href="#">Site 01</a></li>
+                        </ul>
+                        <h3 class="section03__workTitle">TEAM PROJECT</h3>
+                        <ul class="work work__site">
+                            <li class="list"><a href="http://wjsqhdus971007.dothome.co.kr/">IT.D site</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="section03__circle01"></span>
+                <span class="section03__circle02"></span>
+                <span class="section03__circle03"></span>
+            </section>
+            <canvas class="experience-canvas3"></canvas>
+        </div>
+
+        <div id="section04" class="experience4">
+            <section class="section04 section04__wrap">
+                <div class="section04__inner">
+                    <span class="section04__subTitle">저의 포트폴리오를 끝까지 봐주셔서 감사합니다 ;)</span>
+                    <h2 class="section04__title">Contact Me!</h2>
+                    <address class="address">
+                        <span class="email">e-mail : </span
+                        ><a href="mailto:jeon_boyeon@kakao.com">jeon_boyeon@kakao.com</a>
+                    </address>
+
+                    <div class="sns">
+                        <article class="sns_box">
+                            <a href="https://github.com/jeonboyeon"><img src="public/img/github.png" alt="github" /></a>
+                        </article>
+                        <article class="sns_box">
+                            <a href="http://jeonboyeon.dothome.co.kr/"
+                                ><img src="public/img/class.png" alt="class"
+                            /></a>
+                        </article>
+                    </div>
+                    <span class="section04__bg"></span>
+                    <span class="section04__bg02"></span>
+                </div>
+                <canvas class="experience-canvas4"></canvas>
+            </section>
+        </div>
         <script type="module" src="/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
+        <script>
+            // 섹션이동 부드럽게
+            $(document).ready(function () {
+                $("a").on("click", function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $("html, body").animate(
+                            {
+                                scrollTop: $(hash).offset().top,
+                            },
+                            800,
+                            function () {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+
+            // 스크롤 트리거
+            gsap.registerPlugin(ScrollTrigger);
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                smooth: true,
+            });
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // gsap  효과 -------------------------------------------------------
+            // 구름01
+            let cloud01 = gsap.timeline({ delay: 0.5 });
+            cloud01.to(
+                ".section01_bg01",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "50% 10%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "power3",
+                },
+                0
+            );
+
+            // 구름02
+            let cloud02 = gsap.timeline({ delay: 0.5 });
+            cloud02.to(
+                ".section01_bg02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "50% 10%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "power3",
+                },
+                0
+            );
+
+            // 섹션 01
+            let experience = gsap.timeline({ delay: 0.5 });
+            experience.to(
+                ".experience",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "30% 0%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 1,
+                    },
+                    opacity: 0,
+                    y: 80,
+                    duration: 1.5,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let gL1 = gsap.timeline({ delay: 0.5 });
+            gL1.to(
+                ".section01_main",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "70%",
+                        markers: false,
+                        scrub: 1,
+                    },
+                    opacity: 0,
+                    y: 80,
+                    duration: 1.5,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 진한 구름
+            let gL2 = gsap.timeline({ delay: 0.5 });
+            gL2.from(
+                ".section01_bg01",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 1.3,
+                    },
+                    y: 100,
+                    duration: 1,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 연한 구름
+            let gL3 = gsap.timeline({ delay: 0.5 });
+            gL3.from(
+                ".section01_bg02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 1.3,
+                    },
+                    y: 200,
+                    duration: 1,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 서브 요소01
+            let gL4 = gsap.timeline({ delay: 1 });
+            gL4.to(
+                ".section01_codeBg01",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "90%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: -50,
+                    x: -100,
+                    scale: 1.3,
+                    rotate: 360,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 서브 요소02
+            let gL5 = gsap.timeline({ delay: 1 });
+            gL5.to(
+                ".section01_codeBg02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "90%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 50,
+                    x: 100,
+                    scale: 1.3,
+                    rotate: 360,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 서브 요소03
+            let gL6 = gsap.timeline({ delay: 3 });
+            gL6.to(
+                ".section01_codeBg03",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "90%",
+                        markers: false,
+                        scrub: 1,
+                    },
+                    y: 20,
+                    x: 100,
+                    scale: 1.3,
+                    rotate: 360,
+                    duration: 2,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 01 서브 요소04
+            let gL7 = gsap.timeline({ delay: 1 });
+            gL7.to(
+                ".section01_codeBg04",
+                {
+                    scrollTrigger: {
+                        trigger: "#section01",
+                        start: "0% 0%",
+                        end: "90%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: -50,
+                    scale: 1.3,
+                    filter: blur(5),
+                    rotate: 360,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+            // 섹션 01 끝 -------------------------------------------------------
+
+            // 섹션 02 시작 -------------------------------------------------------
+
+            // 섹션 02
+            let section02 = gsap.timeline({ delay: 1 });
+            section02.to(
+                ".experience2",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "50% 30%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: -100,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 블렌더 요소
+            let section02_blender = gsap.timeline({ delay: 1 });
+            section02_blender.from(
+                ".experience-canvas2",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "0% 50%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 200,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 타이틀
+            let section02_title = gsap.timeline({ delay: 1 });
+            section02_title.from(
+                ".section02__title01",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "10% 50%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    x: -50,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 인포 내용
+            let section02_info = gsap.timeline({ delay: 1 });
+            section02_info.from(
+                ".section02__info",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "10% 35%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 1.3,
+                    },
+                    x: -50,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 프로필 이미지 01
+            let section02_img = gsap.timeline({ delay: 1 });
+            section02_img.from(
+                ".section02_myImg",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "0% 60%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    y: 100,
+                    x: 400,
+                    opacity: 0,
+                    scale: 1.2,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 프로필 이미지 02
+            let section02_img02 = gsap.timeline({ delay: 1 });
+            section02_img02.from(
+                ".section02_myImg02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "0% 40%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    y: -200,
+                    x: 100,
+                    opacity: 0,
+                    scale: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 프로필 이미지 02
+            let section02_heart = gsap.timeline({ delay: 1 });
+            section02_heart.from(
+                ".heart",
+                {
+                    scrollTrigger: {
+                        trigger: "#section02",
+                        start: "0% 40%",
+                        end: "20%",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 03 시작 -------------------------------------------------------
+
+            let section03_end = gsap.timeline({ delay: 1 });
+            section03_end.to(
+                "#section03",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "90% 60%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 02 프로필 이미지 02
+            let section03_title = gsap.timeline({ delay: 1 });
+            section03_title.from(
+                ".section03__title",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 40%",
+                        end: "0",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    y: -100,
+                    scale: 1.3,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 03 프로필 이미지 02
+            let section03_work = gsap.timeline({ delay: 0.5 });
+            section03_work.from(
+                ".work",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "-10%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 100,
+                    scale: 0,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 03 프로필 이미지 02
+            let section03_workTitle = gsap.timeline({ delay: 0.5 });
+            section03_workTitle.from(
+                ".section03__workTitle",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "-10%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 50,
+                    scale: 0,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            // 섹션 03 프로필 이미지 02
+            let experience_canvas3 = gsap.timeline({ delay: 0.5 });
+            experience_canvas3.from(
+                ".experience-canvas3",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "-10%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 50,
+                    scale: 0,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let section03__circle01 = gsap.timeline({ delay: 0.5 });
+            section03__circle01.from(
+                ".section03__circle01",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: 200,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let section03__circle02 = gsap.timeline({ delay: 0.5 });
+            section03__circle02.from(
+                ".section03__circle02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: -200,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let section03__circle03 = gsap.timeline({ delay: 0.5 });
+            section03__circle03.from(
+                ".section03__circle03",
+                {
+                    scrollTrigger: {
+                        trigger: "#section03",
+                        start: "0% 70%",
+                        end: "100%",
+                        markers: false,
+                        scrub: 2,
+                    },
+                    y: -200,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let section04 = gsap.timeline({ delay: 1 });
+            section04.from(
+                "#section04",
+                {
+                    scrollTrigger: {
+                        trigger: "#section04",
+                        start: "10% 50%",
+                        end: "30%",
+                        markers: false,
+                        scrub: 3,
+                    },
+                    y: 100,
+                    opacity: 0,
+                    duration: 10,
+                    ease: "power4",
+                },
+                0
+            );
+
+            let section04_blender = gsap.timeline({ delay: 1 });
+            section04_blender.from(
+                ".experience-canvas4",
+                {
+                    scrollTrigger: {
+                        trigger: "#section04",
+                        start: "0% 40%",
+                        end: "0",
+                        markers: true,
+                        scrub: 2,
+                    },
+                    y: 300,
+                    duration: 2.5,
+                    ease: "bounce.out",
+                },
+                0
+            );
+
+            let section04_bg01 = gsap.timeline({ delay: 1 });
+            section04_bg01.from(
+                ".section04__bg",
+                {
+                    scrollTrigger: {
+                        trigger: "#section04",
+                        start: "0% 30%",
+                        end: "0",
+                        markers: true,
+                        scrub: 2,
+                    },
+                    y: 300,
+                    opacity: 0,
+                    duration: 2.5,
+                    ease: "expo",
+                },
+                0
+            );
+
+            let section04_bg02 = gsap.timeline({ delay: 1 });
+            section04_bg02.from(
+                ".section04__bg02",
+                {
+                    scrollTrigger: {
+                        trigger: "#section04",
+                        start: "0% 30%",
+                        end: "0",
+                        markers: true,
+                        scrub: 2,
+                    },
+                    y: -150,
+                    scale: 0,
+                    opacity: 0,
+                    duration: 7,
+                    ease: "expo",
+                },
+                0
+            );
+        </script>
     </body>
 </html>
