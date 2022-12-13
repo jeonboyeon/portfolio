@@ -259,8 +259,6 @@ a {
 
 .experience-canvas2 {
     position: absolute;
-    transform: scale(0);
-    opacity: 0;
     width: 100%;
     height: 100%;
 }
@@ -536,7 +534,6 @@ a {
 
 /* experience4 ------------------------------------------------------- */
 #section04 {
-    opacity: 0;
     overflow: hidden;
     position: relative;
     width: 100%;
