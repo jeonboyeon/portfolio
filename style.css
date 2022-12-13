@@ -443,8 +443,6 @@ a {
     background: linear-gradient(to top, #ffaeae 50%, #ff8a8a 100%);
 
     /* background-color: #ff8a8a; */
-
-    opacity: 0;
 }
 
 .experience-canvas3 {
@@ -576,7 +574,7 @@ a {
     top: 380px;
     right: 100px;
     display: flex;
-      z-index: 3;
+    z-index: 3;
 }
 .sns_box {
     width: 35px;
