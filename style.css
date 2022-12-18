@@ -690,7 +690,7 @@ a {
 @media (max-width: 600px) {
     .section02__inner > h2 {
         top: 500px;
-        left: 25%;
+        left: 10%;
         font-size: 25px;
         white-space: nowrap;
     }
@@ -710,7 +710,7 @@ a {
         width: 250px;
         min-width: 230px;
         background-size: contain;
-        left: 15%;
+        left: 7%;
     }
     .section02_myImg02 {
         top: 330px;
@@ -725,14 +725,16 @@ a {
     .section02__inner > .section02__info {
         white-space: nowrap;
         top: 425px;
-        left: 22%;
+        left: 6%;
         font-size: 11px;
     }
     .section01__heart05 {
-        left: 70%;
+        width: 30px;
+        height: 30px;
     }
     .section01__heart03 {
-        left: 10%;
+        width: 40px;
+        height: 40px;
     }
 }
 /* experience3 ------------------------------------------------------- */
