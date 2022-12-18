@@ -688,6 +688,52 @@ a {
 }
 
 @media (max-width: 600px) {
+    .section02__inner > h2 {
+        top: 500px;
+        left: 25%;
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    .section02__inner > h2::after {
+        width: 340px;
+        height: 340px;
+        left: -40px;
+        top: -70px;
+    }
+    .section02__inner > h2::before {
+        bottom: 0;
+        width: 130px;
+    }
+
+    .section02_myImg {
+        top: 80px;
+        width: 250px;
+        min-width: 230px;
+        background-size: contain;
+        left: 15%;
+    }
+    .section02_myImg02 {
+        top: 330px;
+        width: 20vw;
+        min-width: 150px;
+        height: 20vw;
+        min-height: 150px;
+        background-size: cover;
+        left: 50%;
+    }
+
+    .section02__inner > .section02__info {
+        white-space: nowrap;
+        top: 425px;
+        left: 22%;
+        font-size: 11px;
+    }
+    .section01__heart05 {
+        left: 70%;
+    }
+    .section01__heart03 {
+        left: 10%;
+    }
 }
 /* experience3 ------------------------------------------------------- */
 .experience3 {
