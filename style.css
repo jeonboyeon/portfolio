@@ -75,6 +75,7 @@ a {
 
 /* experience1 ------------------------------------------------------- */
 .experience {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
 }
@@ -690,7 +691,7 @@ a {
 @media (max-width: 600px) {
     .section02__inner > h2 {
         top: 500px;
-        left: 10%;
+        left: 15%;
         font-size: 25px;
         white-space: nowrap;
     }
@@ -725,7 +726,7 @@ a {
     .section02__inner > .section02__info {
         white-space: nowrap;
         top: 425px;
-        left: 6%;
+        left: 10%;
         font-size: 11px;
     }
     .section01__heart05 {
